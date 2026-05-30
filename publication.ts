@@ -43,7 +43,7 @@ const publication: Publication = {
   ],
 
   // ── venue & year ──────────────────────────────────────────────────────────
-  venue: undefined, // "CVPR 2025", "NeurIPS 2025", "Science Robotics", etc. (or undefined to hide)
+  venue: undefined, // "CVPR", "NeurIPS", "Science Robotics", etc. (or undefined to hide)
   year:  "2025",
 
   // ── optional text ─────────────────────────────────────────────────────────
@@ -61,8 +61,8 @@ const publication: Publication = {
   //   undefined       → button hidden entirely
   paper:         "https://arxiv.org/abs/XXXX.XXXXX",
   pdf:           undefined,
-  code:          COMING_SOON,
-  supplementary: undefined,
+  code:          "https://github.com/LuCazzola/MarkDownPAPER",
+  supplementary: COMING_SOON,  // use the COMING_SOON constant for a disabled button
 
   // ── back-link shown top-left ───────────────────────────────────────────────
   siteUrl:   "https://your-portfolio.github.io/",
