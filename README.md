@@ -138,6 +138,7 @@ const publication: Publication = {
   supplementary: undefined,
 
   siteUrl:     "https://your-portfolio.github.io/",
+  siteLabel:   "← Back to site",   // top-left back link text
   teaserIndex: 1,   // which media item to show as the teaser (1-based)
 
   // Drop files in public/media/ and reference them with /media/filename

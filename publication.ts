@@ -65,7 +65,8 @@ const publication: Publication = {
   supplementary: undefined,
 
   // ── back-link shown top-left ───────────────────────────────────────────────
-  siteUrl: "https://your-portfolio.github.io/",
+  siteUrl:   "https://your-portfolio.github.io/",
+  siteLabel: "← Back to site",   // edit this to change the top-left back link text
 
   // ── media list — referenced in content.md by 1-based index ────────────────
   // Paths are relative to public/assets/ — just start with "/"
