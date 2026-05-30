@@ -57,11 +57,11 @@ Rename the remote to point to your own paper repo:
 git remote set-url origin https://github.com/your-org/my-paper
 ```
 
-Push `docs/` to your deployment branch:
+Commit everything and push:
 
 ```bash
-git add docs/
-git commit -m "Deploy"
+git add -A
+git commit -m "Update paper"
 git push origin main
 ```
 
