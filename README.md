@@ -2,68 +2,64 @@
 
 From Markdown to published paper website — in minutes.
 
-This repo is both the **tutorial** and the **template** for [md-paper](https://github.com/LuCazzola/md-paper).  
-Clone it, look around, then follow the steps below to create your own paper.
-
 ---
 
-## How it works
+## Quickstart
 
-Your paper repo contains only the files you care about:
-
-```
-my-paper/
-├── md-paper/          ← engine (git submodule — never touch this)
-├── public/
-│   └── media/         ← your images and videos
-├── publication.ts     ← your paper's metadata, authors, links, theme
-├── content.md         ← your paper body in Markdown
-└── package.json       ← 3 scripts, nothing else
-```
-
-The engine lives in `md-paper/` as a git submodule. Your content is completely separate — updating the engine never touches your files.
-
----
-
-## Creating a new paper
-
-### 1 — Create your repo
-
-Create a new empty repository on GitHub, then clone it:
+### 1 — Clone this repository
 
 ```bash
-git clone https://github.com/your-org/my-paper
+git clone --recursive https://github.com/LuCazzola/MarkDownPAPER my-paper
 cd my-paper
 ```
 
-### 2 — Add the engine as a submodule
+> `--recursive` is required to fetch the `md-paper` engine submodule.
 
-```bash
-git submodule add https://github.com/LuCazzola/md-paper md-paper
-```
-
-### 3 — Copy the scaffolding
-
-```bash
-cp md-paper/publication.ts .
-cp md-paper/content.md .
-cp md-paper/package.json .
-mkdir -p public/media
-```
-
-### 4 — Install and preview
+### 2 — Install dependencies
 
 ```bash
 npm install
+```
+
+### 3 — Edit your paper
+
+The only files you need to touch:
+
+```
+my-paper/
+├── public/
+│   └── media/         ← drop your images and videos here
+├── publication.ts     ← title, authors, links, media list, theme
+└── content.md         ← paper body in Markdown
+```
+
+Preview live as you edit:
+
+```bash
 npm run dev
 ```
 
-Open `http://localhost:5173`. Edit `publication.ts` and `content.md` to make it yours.
+Open `http://localhost:5173`.
 
-### 5 — Build and deploy
+### 4 — Build
 
 ```bash
 npm run build
+```
+
+Output goes to `docs/`.
+
+### 5 — Deploy to GitHub Pages
+
+Rename the remote to point to your own paper repo:
+
+```bash
+git remote set-url origin https://github.com/your-org/my-paper
+```
+
+Push `docs/` to your deployment branch:
+
+```bash
 git add docs/
 git commit -m "Deploy"
 git push origin main
@@ -80,7 +76,7 @@ On GitHub: **Settings → Pages → Source → Deploy from branch**, select your
 
 ## Updating the engine
 
-When md-paper releases an update, pull it into your paper repo:
+When [md-paper](https://github.com/LuCazzola/md-paper) releases an update:
 
 ```bash
 git submodule update --remote md-paper
@@ -92,7 +88,7 @@ Your `publication.ts`, `content.md`, and `public/media/` are never touched.
 
 ---
 
-## The files you edit
+## Reference
 
 ### `publication.ts` — metadata, links, media list, theme
 
