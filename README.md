@@ -2,9 +2,16 @@
 
 From Markdown to published paper website — in minutes.
 
+Works powered by ***MarkDownPAPER***
+* [BlendAnything: A Blender Plugin for Cross-Topology Motion Blending (SIGGRAPH Posters 2026)](https://mmlab-cv.github.io/BlendAnything/)
+* [Neural Motion Blending Across Arbitrary Character Topologies (CGI2026)](https://mmlab-cv.github.io/neural_motion_blending/)
+* [Kinetic Mining in Context: Few-Shot Action Synthesis via Text-to-Motion Distillation (ICPR 2026)](https://lucazzola.github.io/kinemic-page/)
+
 ---
 
 ## 🚀 Quickstart
+
+We provide a Quick overview of ***MarkDownPAPER*** features in [**This Demo Website**](https://lucazzola.github.io/MarkDownPAPER/)
 
 ### 1 — Clone this repository
 
