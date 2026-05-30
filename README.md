@@ -67,7 +67,10 @@ git push origin main
 
 On GitHub: **Settings → Pages → Source → Deploy from branch**, select your branch and `/docs`.
 
-> **Base path** is derived automatically from the `name` field in `package.json`, which should match your GitHub repository name. No manual configuration needed.
+> **Important:** open `package.json` and set `"name"` to match your GitHub repository name exactly — this is used as the base path for all assets. If the name is wrong the deployed site will show a blank page.
+> ```json
+> { "name": "your-repo-name", ... }
+> ```
 
 ---
 
