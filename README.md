@@ -1,10 +1,10 @@
-# MarkDownPAPER
+# MarkDownPAPER 📄
 
 From Markdown to published paper website — in minutes.
 
 ---
 
-## Quickstart
+## 🚀 Quickstart
 
 ### 1 — Clone this repository
 
@@ -21,16 +21,16 @@ cd my-paper
 npm install
 ```
 
-### 3 — Edit your paper
+### 3 — Edit your paper ✏️
 
 The only files you need to touch:
 
 ```
 my-paper/
 ├── public/
-│   └── media/         ← drop your images and videos here
-├── publication.ts     ← title, authors, links, media list, theme
-└── content.md         ← paper body in Markdown
+│   └── media/         ← 🖼️  drop your images and videos here
+├── publication.ts     ← 📋  title, authors, links, media list, theme
+└── content.md         ← 📝  paper body in Markdown
 ```
 
 Preview live as you edit:
@@ -41,7 +41,7 @@ npm run dev
 
 Open `http://localhost:5173`.
 
-### 4 — Build
+### 4 — Build 🔨
 
 ```bash
 npm run build
@@ -49,7 +49,7 @@ npm run build
 
 Output goes to `docs/`.
 
-### 5 — Deploy to GitHub Pages
+### 5 — Deploy to GitHub Pages 🌐
 
 Rename the remote to point to your own paper repo:
 
@@ -67,14 +67,14 @@ git push origin main
 
 On GitHub: **Settings → Pages → Source → Deploy from branch**, select your branch and `/docs`.
 
-> **Important:** open `package.json` and set `"name"` to match your GitHub repository name exactly — this is used as the base path for all assets. If the name is wrong the deployed site will show a blank page.
+> ⚠️ **Important:** open `package.json` and set `"name"` to match your GitHub repository name exactly — this is used as the base path for all assets. If the name is wrong the deployed site will show a blank page.
 > ```json
 > { "name": "your-repo-name", ... }
 > ```
 
 ---
 
-## Updating the engine
+## 🔄 Updating the engine
 
 When [md-paper](https://github.com/LuCazzola/md-paper) releases an update:
 
@@ -89,7 +89,7 @@ Your `publication.ts`, `content.md`, and `public/media/` are never touched.
 
 ---
 
-## Reference
+## 📖 Reference
 
 ### `publication.ts` — metadata, links, media list, theme
 
@@ -166,7 +166,7 @@ export default publication;
 
 Standard Markdown with special tokens for embedding media.
 
-#### Embedding media
+#### 🖼️ Embedding media
 
 | Token | Result |
 |---|---|
@@ -182,7 +182,7 @@ Append `{...}` for a Markdown caption rendered above the media:
 [MEDIA:1]{**Figure 1.** Supports **bold**, *italic*, `code`, and math ($\alpha$).}
 ```
 
-#### Multi-column layout
+#### 🗂️ Multi-column layout
 
 ```
 [MEDIA-MULTICOL:1.1]
@@ -193,7 +193,7 @@ Append `{...}` for a Markdown caption rendered above the media:
 
 The scale factor (`1.1`) lets the block extend beyond the content width. Columns collapse to a single column on mobile.
 
-#### Spacing
+#### 📐 Spacing
 
 ```
 [SPACING:small]    →  16 px
@@ -202,7 +202,7 @@ The scale factor (`1.1`) lets the block extend beyond the content width. Columns
 [SPACING:xlarge]   →  64 px
 ```
 
-#### Math
+#### 🔢 Math
 
 Full KaTeX — inline `$...$` and display `$$...$$`.
 
@@ -211,4 +211,4 @@ Full KaTeX — inline `$...$` and display `$$...$$`.
 ## License
 
 Open source — free to use with attribution.  
-If md-paper is useful for your work, a link back is appreciated.
+If md-paper is useful for your work, a link back is appreciated. ⭐
