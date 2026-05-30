@@ -67,9 +67,9 @@ git push origin main
 
 On GitHub: **Settings → Pages → Source → Deploy from branch**, select your branch and `/docs`.
 
-> **Custom base path** — if your site lives at `https://org.github.io/repo-name/`, set `VITE_BASE` before building:
-> ```bash
-> VITE_BASE=/repo-name/ npm run build
+> **Base path** — if your site lives at `https://org.github.io/repo-name/` (the default for GitHub Pages), set `basePath` in `publication.ts`:
+> ```ts
+> basePath: "/repo-name/",
 > ```
 
 ---

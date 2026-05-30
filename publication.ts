@@ -65,6 +65,10 @@ const publication: Publication = {
   supplementary: undefined,
 
   // ── back-link shown top-left ───────────────────────────────────────────────
+  // GitHub Pages base path — set to "/repo-name/" if your site lives at
+  // https://username.github.io/repo-name/ (almost always required)
+  basePath: "/MarkDownPAPER/",
+
   siteUrl: "https://your-portfolio.github.io/",
 
   // ── media list — referenced in content.md by 1-based index ────────────────
