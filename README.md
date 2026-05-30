@@ -82,6 +82,7 @@ When [md-paper](https://github.com/LuCazzola/md-paper) releases an update:
 git submodule update --remote md-paper
 git add md-paper
 git commit -m "Update md-paper engine"
+git push origin main
 ```
 
 Your `publication.ts`, `content.md`, and `public/media/` are never touched.
