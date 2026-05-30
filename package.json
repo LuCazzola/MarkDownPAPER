@@ -8,6 +8,10 @@
     "build":   "cross-env PAPER_MODE=1 vite build --config md-paper/vite.config.ts",
     "preview": "cross-env PAPER_MODE=1 vite preview --config md-paper/vite.config.ts"
   },
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  },
   "devDependencies": {
     "cross-env": "^7.0.3"
   }

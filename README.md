@@ -13,6 +13,13 @@ Works powered by ***MarkDownPAPER***
 
 We provide a Quick overview of ***MarkDownPAPER*** features in [**This Demo Website**](https://lucazzola.github.io/MarkDownPAPER/)
 
+### Prerequisites
+
+- **Node.js** ≥ 18 ([nodejs.org](https://nodejs.org))
+- **npm** ≥ 9 (bundled with Node 18+)
+
+> Verify with `node -v` and `npm -v`.
+
 ### 1 — Clone this repository
 
 ```bash
