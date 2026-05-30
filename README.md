@@ -67,10 +67,7 @@ git push origin main
 
 On GitHub: **Settings → Pages → Source → Deploy from branch**, select your branch and `/docs`.
 
-> **Base path** — if your site lives at `https://org.github.io/repo-name/` (the default for GitHub Pages), set `basePath` in `publication.ts`:
-> ```ts
-> basePath: "/repo-name/",
-> ```
+> **Base path** is derived automatically from the `name` field in `package.json`, which should match your GitHub repository name. No manual configuration needed.
 
 ---
 
